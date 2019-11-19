@@ -1,0 +1,10 @@
+build.sh
+Dockerfile
+.git
+.gitignore
+grace
+venv
+LICENSE
+README.md
+
+*.pyc
