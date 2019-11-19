@@ -33,7 +33,7 @@ def shutdown():
   should_shutdown = True
   return "Done"
 
-@app.route('/chew_memory')
-def chew_memory():
-  some_str = ' ' * 512000000
-  return some_str
+@app.route('/chew_memory/<amount>')
+def chew_memory(amount):
+  byte_array = bytearray(int(amount))
+  return "done"
