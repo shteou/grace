@@ -16,7 +16,7 @@ spec:
         app.kubernetes.io/name: {{ include "grace.name" . }}
         app.kubernetes.io/instance: {{ .Release.Name }}
     spec:
-      terminationGracePeriodSeconds: 1
+      terminationGracePeriodSeconds: {{ .Values.terminationGracePeriod }}
 
     {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
