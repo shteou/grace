@@ -27,6 +27,12 @@ def hello():
   name = request.args.get("name", "World")
   return 'Hello!'
 
+@app.route('/sleep')
+def sleep():
+  sleep_time = request.args.get("time", "10")
+  time.sleep(float(sleep_time))
+  return 'Slept!'
+
 @app.route('/shutdown')
 def shutdown():
   global should_shutdown
