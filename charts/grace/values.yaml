@@ -4,6 +4,8 @@
 
 replicaCount: 1
 
+prestop: true
+
 image:
   repository: shteou/grace
   tag: 1.1.2
