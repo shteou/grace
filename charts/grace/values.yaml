@@ -8,7 +8,7 @@ prestop: true
 
 image:
   repository: shteou/grace
-  tag: 1.1.2
+  tag: 1.1.3
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
